@@ -1,0 +1,96 @@
+@import 'reset.css';
+
+@font-face {
+    font-family: 'BungeeSpice';
+    src: url('BungeeSpice-Regular.ttf') format('truetype');
+
+}
+
+
+
+#menu {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: stretch;
+    padding: 0;
+    margin: 0;
+    height: 100vh;
+    background-image: url('mario.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+
+}
+#menu li {
+    width: 100px;
+    height: 100px;
+    background-color: rgb(245, 248, 248);
+    margin: 10px;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 1s;
+
+}
+
+#menu li:hover {
+    transform: rotate(360deg);
+    background-color: blue;
+    border-radius: 50%;
+}
+
+#menu li a {
+    text-decoration: none;    
+    font-size: 18px;
+    color:rgb(223, 25, 25);
+    font-family: BungeeSpice;
+}
+
+#item-4 {
+    padding: 5x;
+    margin: 20px 20px;
+    border: blue 2px solid;
+    outline: gold 4px solid;
+
+
+}
+
+@media (min-width: 576px) {
+    #menu {
+        background: black;
+    }
+    #menu li {
+        width: 100px;
+        height: 100px;
+    }
+}
+
+@media (min-width: 768px) {
+    #menu {
+        flex-direction: row;
+        background-image: url('mario.jpg');
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+
+    }
+
+}
+
+@media (min-width: 992px) {
+    #menu { 
+        flex-direction: row;
+    }
+    #menu li {
+        width: 100px;
+        height: 100px;
+    }
+}
+
+@media (min-width: 1200px) {
+    
+}
